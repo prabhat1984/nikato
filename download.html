@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download the App — Nikato</title>
+  <meta name="description" content="Download the Nikato app — scan the QR code to install on your Android phone.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <header class="page-header text-center">
+    <div class="container">
+      <h1 class="fw-bold mb-2">Download Nikato</h1>
+      <p class="text-white-50 col-lg-6 mx-auto">Scan the QR code with your phone camera to install the app.</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+
+        <!-- QR code -->
+        <div class="col-lg-5 text-center">
+          <div class="qr-box">
+            <div id="qrcode" class="d-flex justify-content-center">
+              <div class="spinner-border text-brand" role="status"><span class="visually-hidden">Generating QR…</span></div>
+            </div>
+            <p class="small text-secondary mt-3 mb-0 text-break" id="qr-url"></p>
+          </div>
+          <p class="text-secondary small mt-4">
+            <i class="bi bi-camera me-1 brand-text"></i>
+            Point your phone camera at the code — no scanner app needed.
+          </p>
+        </div>
+
+        <!-- Steps + direct link -->
+        <div class="col-lg-7">
+          <h2 class="fw-bold mb-4">Install in 4 easy steps</h2>
+          <div class="row g-3" id="install-steps"></div>
+
+          <div class="alert alert-light border mt-4 mb-0 small">
+            <i class="bi bi-info-circle me-1 brand-text"></i>
+            Direct link not working?
+            <span class="text-break">
+              Set your app's download URL in <code>js/config.js</code> (field
+              <code>APP_DOWNLOAD_URL</code>) — until then the QR encodes this page itself.
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's inside -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What's inside the app</h2>
+        <p class="text-secondary">Everything the website shows — and a lot more.</p>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 reveal">
+          <div class="icon-tile mb-3"><i class="bi bi-shop-window"></i></div>
+          <h3 class="h6 fw-bold">Nearby stores</h3>
+          <p class="small text-secondary">Browse partner stores around you.</p>
+        </div>
+        <div class="col-6 col-md-3 reveal">
+          <div class="icon-tile teal mb-3"><i class="bi bi-map"></i></div>
+          <h3 class="h6 fw-bold">Live tracking</h3>
+          <p class="small text-secondary">Watch your order arrive in real time.</p>
+        </div>
+        <div class="col-6 col-md-3 reveal">
+          <div class="icon-tile mb-3"><i class="bi bi-wallet2"></i></div>
+          <h3 class="h6 fw-bold">Easy payments</h3>
+          <p class="small text-secondary">Online payment or cash on delivery.</p>
+        </div>
+        <div class="col-6 col-md-3 reveal">
+          <div class="icon-tile teal mb-3"><i class="bi bi-translate"></i></div>
+          <h3 class="h6 fw-bold">10 languages</h3>
+          <p class="small text-secondary">Shop in your preferred language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/download.js"></script>
+</body>
+</html>

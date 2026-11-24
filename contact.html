@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Nikato</title>
+  <meta name="description" content="Get in touch with the Nikato team — support, partnerships and feedback.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <header class="page-header text-center">
+    <div class="container">
+      <h1 class="fw-bold mb-2">Contact Us</h1>
+      <p class="text-white-50 col-lg-6 mx-auto">Questions, feedback or partnership ideas — we would love to hear from you.</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row g-5">
+
+        <!-- Contact info -->
+        <div class="col-lg-4">
+          <h2 class="h4 fw-bold mb-4">Reach us directly</h2>
+          <div class="d-flex gap-3 mb-4">
+            <div class="icon-tile"><i class="bi bi-envelope"></i></div>
+            <div>
+              <h3 class="h6 fw-bold mb-1">Email</h3>
+              <p class="small text-secondary mb-0" id="contact-email-text">support@nikato.in</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mb-4">
+            <div class="icon-tile teal"><i class="bi bi-telephone"></i></div>
+            <div>
+              <h3 class="h6 fw-bold mb-1">Phone</h3>
+              <p class="small text-secondary mb-0" id="contact-phone-text">+91 99999 99999</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mb-4">
+            <div class="icon-tile"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <h3 class="h6 fw-bold mb-1">Office</h3>
+              <p class="small text-secondary mb-0" id="contact-address-text">Nikato Technologies Pvt. Ltd., India</p>
+            </div>
+          </div>
+          <div class="alert alert-light border small mb-0">
+            <i class="bi bi-clock me-1 brand-text"></i>
+            Support hours: Monday–Saturday, 9:00 AM – 9:00 PM IST.
+            <br>Not happy with an order?
+            <a href="complaint.html" class="fw-semibold text-decoration-none brand-text">Register a complaint →</a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="h4 fw-bold mb-1">Send a message</h2>
+              <p class="text-secondary small mb-4">Fill the form and we will get back to you as soon as possible.</p>
+
+              <div id="contact-success" class="alert alert-success d-none">
+                <i class="bi bi-check-circle me-2"></i>Thank you! Your mail app has been opened with your message pre-filled.
+              </div>
+
+              <form id="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 mb-3">
+                    <label for="contact-name" class="form-label fw-semibold">Name</label>
+                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your full name" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="contact-email" class="form-label fw-semibold">Email</label>
+                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="contact-subject" class="form-label fw-semibold">Subject</label>
+                    <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="What is this about?" required>
+                    <div class="invalid-feedback">Please add a short subject.</div>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="contact-message" class="form-label fw-semibold">Message</label>
+                    <textarea class="form-control" id="contact-message" name="message" rows="5"
+                              placeholder="How can we help you?" required></textarea>
+                    <div class="invalid-feedback">Message should be at least 10 characters.</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-brand btn-lg px-4">
+                      <i class="bi bi-send me-2"></i>Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
